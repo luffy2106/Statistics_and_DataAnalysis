@@ -218,3 +218,16 @@ r ≈ 0
 
 Therefore, the approximate Pearson correlation coefficient of Bacteria B's coverage and the number of days passed is 0, indicating no correlation between the two variables.
 ```
+
+###### What is the difference between dataframe and series
+1. DataFrame:
+A DataFrame is a 2-dimensional labeled data structure, similar to a table or spreadsheet with rows and columns.
+It can store heterogeneous data types (e.g., integers, floats, strings) in its columns.
+Each column in a DataFrame is represented as a Series.
+You can think of a DataFrame as a collection of Series objects that share the same index.
+
+2. Series:
+A Series is a 1-dimensional labeled array that can hold any data type, similar to a column in a spreadsheet or a single column of data in a DataFrame.
+It has an associated index, which labels the elements in the Series.
+A Series can be created from various data sources like lists, arrays, dictionaries, etc.
+Unlike a DataFrame, a Series does not have columns; it only has a single column of data.
