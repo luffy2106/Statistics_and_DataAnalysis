@@ -160,7 +160,7 @@ How to performe ChiSquare(use Chi2 table) <br />
 https://www.simplilearn.com/tutorials/statistics-tutorial/chi-square-test
 
 
-###### Example about Pearson correlation
+#### Example about Pearson correlation
 
 The Pearson correlation formula is used to calculate the correlation coefficient between two variables. The correlation coefficient measures the strength and direction of the linear relationship between two variables.
 
@@ -219,7 +219,7 @@ r ≈ 0
 Therefore, the approximate Pearson correlation coefficient of Bacteria B's coverage and the number of days passed is 0, indicating no correlation between the two variables.
 ```
 
-###### What is the difference between dataframe and series
+#### What is the difference between dataframe and series
 1. DataFrame:
 A DataFrame is a 2-dimensional labeled data structure, similar to a table or spreadsheet with rows and columns.
 It can store heterogeneous data types (e.g., integers, floats, strings) in its columns.
