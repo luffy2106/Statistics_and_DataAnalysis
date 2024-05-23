@@ -129,7 +129,46 @@ overfitting.
 
 so (1) and (2) is correct.
 
+[AllyLab] Question 
+2 bateria cutures, A and B,were set up in two different dishes, each covering 50% of its dish. Over 20 days, bateria A's percentage of coverage increased to 70% and bateria B's percentage of coverage reduced to 40%.
+Approximately, what is the Pearson correlation coefficient of bateria B's coverage and the number of days passed ?
 
+Solution:
+To calculate the Pearson correlation coefficient between Bacteria B's coverage and the number of days passed, we need to determine the relationship between these two variables.
+
+In this case, we can observe that as the number of days passed increases, Bacteria B's coverage reduces. This implies a negative correlation between the two variables.
+
+To approximate the Pearson correlation coefficient, we can use the given information:
+
+Bacteria B's initial coverage is 50%.
+Bacteria B's final coverage is 40%.
+The number of days passed is 20.
+Using the formula mentioned earlier:
+
+r = (Σ((x - mean(x)) * (y - mean(y)))) / (sqrt(Σ(x - mean(x))^2) * sqrt(Σ(y - mean(y))^2))
+
+We can substitute the values:
+
+x = [initial coverage, final coverage] = [50%, 40%]
+y = [number of days passed] = [0, 20]
+
+mean(x) = (50% + 40%) / 2 = 45%
+mean(y) = (0 + 20) / 2 = 10
+
+Σ((x - mean(x)) * (y - mean(y))) = ((50% - 45%) * (0 - 10)) + ((40% - 45%) * (20 - 10)) = (-5% * -10) + (-5% * 10) = 0
+
+Σ(x - mean(x))^2 = ((50% - 45%)^2) + ((40% - 45%)^2) = (5%)^2 + (5%)^2 = 0.05% + 0.05% = 0.1%
+
+Σ(y - mean(y))^2 = ((0 - 10)^2) + ((20 - 10)^2) = (10)^2 + (10)^2 = 100 + 100 = 200
+
+Now, we can substitute these values into the formula:
+
+r = (0) / (sqrt(0.1%) * sqrt(200))
+r = 0 / (0.316% * 14.142)
+r = 0 / 0.447
+r ≈ 0
+
+Therefore, the approximate Pearson correlation coefficient of Bacteria B's coverage and the number of days passed is 0, indicating no correlation between the two variables.
 
 
 
