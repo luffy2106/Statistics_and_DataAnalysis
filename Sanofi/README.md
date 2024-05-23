@@ -1,2 +1,0 @@
-# Statistics test from Sanofi
-

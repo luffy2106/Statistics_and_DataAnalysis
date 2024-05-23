@@ -231,3 +231,91 @@ A Series is a 1-dimensional labeled array that can hold any data type, similar t
 It has an associated index, which labels the elements in the Series.
 A Series can be created from various data sources like lists, arrays, dictionaries, etc.
 Unlike a DataFrame, a Series does not have columns; it only has a single column of data.
+
+
+#### [Sanofi] What is the model coefficient in Machine Learning?
+
+Model Coefficients in Machine Learning:
+In machine learning, Model coefficients are values assigned to features by the algorithm to indicate their importance in making predictions. They represent the strength of the relationship between each feature and the target variable, helping interpret feature importance and model decisions.
+
+For example, in linear regression, the model coefficients are the weights assigned to each input feature to determine the impact of each feature on the predicted output. 
+
+The magnitude of the coefficient indicates the strength of the relationship between the feature and the target variable. A larger coefficient implies a stronger impact on the prediction.
+
+#### [Sanofi] What is Std Error in machine learning ?
+
+Standard error in machine learning refers to the standard deviation of the sampling distribution of a statistic, such as coefficients or predictions. It measures the variability of estimates and helps assess the precision of the model parameters. Lower standard errors indicate more reliable and precise estimates.
+
+Example :
+
+Let's say you are fitting a linear regression model to predict house prices based on features like square footage, number of bedrooms, and location. After training the model, you obtain the following coefficients with their standard errors:
+- Square Footage: 100 (Standard Error = 10)
+- Number of Bedrooms: 20 (Standard Error = 5)
+- Location: 30 (Standard Error = 15)
+
+These standard errors indicate the variability in the estimates of the coefficients. For example, the coefficient for square footage has a lower standard error compared to the coefficient for location, suggesting that the estimate for square footage is more precise and reliable.
+
+#### [Sanofi] What is P-value in machine learning ?
+
+In machine learning, the p-value is a statistical measure that helps determine the significance of a feature's contribution to the model. It indicates the probability of obtaining an effect (or result) as extreme as the one observed in the data under the assumption that the null hypothesis is true.
+- If the p-value is low (typically less than 0.05), it suggests that the feature is statistically significant and likely has a meaningful impact on the target variable.
+- If the p-value is high (greater than 0.05), it indicates that the feature may not be statistically significant and could potentially be removed from the model without affecting its performance significantly.
+
+By analyzing p-values, machine learning practitioners can make informed decisions about feature selection and model interpretation based on the statistical significance of each feature.
+
+Example :
+Let's consider a scenario where we are building a machine learning model to predict housing prices based on various features such as square footage, number of bedrooms, and location.
+
+After training the model, we calculate the p-values for each feature to determine their significance. Here are the results:
+
+1. Square Footage:
+- P-Value: 0.002
+- Interpretation: The low p-value indicates that square footage is statistically significant in predicting housing prices.
+
+2. Number of Bedrooms:
+- P-Value: 0.123
+- Interpretation: The relatively high p-value suggests that the number of bedrooms may not be statistically significant in predicting housing prices.
+Location:
+
+3. P-Value: 0.000
+- Interpretation: The very low p-value indicates that location plays a significant role in predicting housing prices.
+- Based on these p-values, we can prioritize features like square footage and location in our model, while potentially considering excluding the number of bedrooms if it does not significantly contribute to the predictive power of the model.
+
+#### [Sanofi] What is P-Intercept in the context of regression model (suppose that we have the example below)?
+Ex :
+A dataset contain sales of a music album in different media company : Spotify, Apple Music, and Youtube. You are provided marketing budget of album and have built a linear model to predict the sales . The model coefficients can bet found in the table below
+
+|           | Coefficient | Std Error | P-Value  |
+|-----------|-------------|-----------|----------|
+| Intercept | 3.365       | 0.3119    | 0.000105 |
+| Spotify   | 0.294       | 0.0075    | 0.000086 |
+| Apple Music | 0.064     | 0.005     | 0.78     |
+| Youtube   | 0.059       | 0.0011    | 0.00101  |
+
+Ans :
+
+In the context of a linear regression model, the Intercept term represents the value of the dependent variable (in this case, sales of the music album) when all independent variables (Spotify, Apple Music, Youtube) are set to zero.
+
+- The Intercept coefficient in the table provided is 3.365.
+- This means that if there is zero marketing budget allocated to Spotify, Apple Music, and Youtube, the expected sales value of the music album is 3.365 units.
+
+Essentially, the Intercept accounts for the baseline or starting point of the dependent variable before considering the impact of the independent variables.
+
+Therefore, the Intercept term provides the estimated value of the dependent variable when all independent variables are assumed to have no effect.
+
+
+#### [Sanofi] What is the difference between Coefficient vs P-Value in evaluating feature importancen: 
+
+
+Model coefficients indicate the strength and direction of the relationship between features and the target variable, while p-values help determine the statistical significance of these relationships. Both aspects are crucial in assessing feature importance in a machine learning model.
+
+While a large coefficient suggests importance, the p-value helps confirm if this relationship is statistically significant. A feature with a high coefficient but a high p-value may not be reliable for prediction because [can skip if it's too long]:
+-  Statistical Significance: The p-value provides a measure of how likely it is to observe the relationship between a feature and the target variable by random chance. A low p-value indicates that the relationship is unlikely to be due to randomness, making it more reliable for prediction.
+
+- Accounting for Uncertainty: While a large coefficient may suggest importance, it doesn't guarantee that the relationship is significant. High coefficients can occur even with noisy or irrelevant features. The p-value helps account for this uncertainty by determining if the relationship is real or just a result of noise in the data.
+
+- Avoiding Overfitting: A high coefficient without statistical significance could be a sign of overfitting, where the model is capturing noise in the training data rather than meaningful patterns. By considering the p-value, you can avoid over-relying on features that don't have a genuine impact on the target variable.
+
+- Model Interpretation: A feature with a high coefficient but a high p-value may not provide actionable insights or contribute significantly to the model's predictive power. By focusing on features with both high coefficients and low p-values, you can prioritize those that are both influential and statistically significant.
+
+- Generalization: Models built on features with low p-values are more likely to generalize well to unseen data. Features with high coefficients but high p-values may not generalize effectively, leading to poor performance on new data.
