@@ -1,5 +1,50 @@
 # Statistics_and_DataAnalysis
 
+### 1. What is Hyppthesis testing ?
+**Hypothesis testing** is a statistical method used to make inferences or draw conclusions about a population based on sample data. It is a way of testing whether a hypothesis (a claim or assumption) about a population parameter is supported by the sample data. The process involves the following steps:
+
+**Key Concepts:**
+1. **Null Hypothesis (H₀)**: This is a statement that there is no effect or no difference in the population. It is the default assumption that the test aims to challenge.
+   
+2. **Alternative Hypothesis (H₁ or Ha)**: This is the statement that contradicts the null hypothesis. It suggests that there is an effect, difference, or relationship in the population.
+   
+3. **Test Statistic**: A value calculated from the sample data that is used to determine whether to reject the null hypothesis. The test statistic depends on the type of test being performed (e.g., t-test, chi-square test, etc.).
+   
+4. **Significance Level (α)**: The threshold at which the null hypothesis is rejected. A common value is 0.05, meaning there is a 5% chance of rejecting the null hypothesis when it is actually true (Type I error).
+   
+5. **P-value**: The probability of obtaining a result at least as extreme as the one observed, assuming the null hypothesis is true. If the p-value is less than or equal to the significance level (α), the null hypothesis is rejected.
+   
+6. **Type I and Type II Errors**:
+   - **Type I Error**: Rejecting the null hypothesis when it is actually true (false positive).
+   - **Type II Error**: Failing to reject the null hypothesis when the alternative hypothesis is true (false negative).
+
+**Steps in Hypothesis Testing:**
+1. **State the Hypotheses**: Formulate the null hypothesis (H₀) and alternative hypothesis (H₁).
+   
+2. **Select the Significance Level (α)**: Choose a significance level (commonly 0.05).
+   
+3. **Choose the Appropriate Test**: Select the statistical test based on the data and hypotheses (e.g., t-test, z-test, chi-square test).
+   
+4. **Calculate the Test Statistic**: Use sample data to compute the test statistic (e.g., z-score, t-value).
+   
+5. **Make a Decision**: Compare the p-value with the significance level:
+   - If p-value ≤ α, reject H₀.
+   - If p-value > α, fail to reject H₀.
+   
+6. **Draw a Conclusion**: Based on the decision, conclude whether there is enough evidence to support the alternative hypothesis.
+
+**Example**
+Suppose a company claims that their light bulbs last on average 1000 hours. You want to test whether the average lifetime is different from 1000 hours.
+
+- **Null Hypothesis (H₀)**: The average lifetime of the light bulbs is 1000 hours.
+- **Alternative Hypothesis (H₁)**: The average lifetime of the light bulbs is not 1000 hours.
+
+You collect sample data, calculate the test statistic (e.g., t-test), and compare the p-value with the significance level. If the p-value is less than 0.05, you reject the null hypothesis and conclude that the average lifetime is significantly different from 1000 hours.
+
+Hypothesis testing is a powerful tool in research and data analysis, helping to make evidence-based decisions and validate assumptions.
+
+
+
 ### 1. What is the A/B testing ?
 
 In the context of machine learning, A/B testing refers to the process of comparing two machine learning models or algorithms to determine which one performs better in terms of a specific metric or key performance indicator (KPI). This approach is often used in real-world applications to decide which model to deploy or which algorithm to use for making predictions.
